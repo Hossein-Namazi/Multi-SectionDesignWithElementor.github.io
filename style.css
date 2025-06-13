@@ -1,73 +1,105 @@
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  overflow-x: hidden;
 }
 
 .navbar {
-    background: #fff44f;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #fff44f;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: -300px; /* اینجا منو در حالت بسته است */
-    width: 250px;
-    height: 100%;
-    background: #fff44f;
-    padding: 1rem;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-    transition: left 0.3s ease;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 250px;
+  height: 100%;
+  background: #fff44f;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  transition: left 0.3s ease;
+  z-index: 999;
 }
 
 .sidebar.open {
-    left: 0;
+  left: 0;
 }
 
 .sidebar .close-btn {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: right;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
 }
 
 .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 50px;
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .content {
-    margin: 2rem;
-    display: grid;
-    gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  max-width: 356.5px; /* فقط عرض یک کارت */
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  justify-content: flex-start;
 }
 
 .card {
-    background: #fff8b3;
-    border: 2px dashed #e0c400;
-    border-radius: 12px;
-    padding: 1rem;
+  flex: 0 0 320px; /* عرض دقیق کارت */
+  margin: 0 0; /* بدون فاصله جانبی */
+  background: #fff8b3;
+  border: 2px dashed #e0c400;
+  border-radius: 12px;
+  padding: 1rem;
 }
 
+
 .icon {
-    font-size: 24px;
-    margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-buttons {
+  margin-top: 1rem;
+}
+
+.carousel-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  background-color: #fff44f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
