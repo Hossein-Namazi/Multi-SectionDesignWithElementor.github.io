@@ -70,7 +70,7 @@ body {
 .carousel {
   display: flex;
   overflow: hidden;
-  max-width: 356.5px; /* فقط عرض یک کارت */
+  max-width: auto; /* فقط عرض یک کارت */
   margin: 0 auto;
   scroll-behavior: smooth;
   justify-content: flex-start;
@@ -102,12 +102,4 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-@media (max-width: 400px) {
-  .carousel {
-    max-width: 90vw; /* کل عرض صفحه */
-  }
-  .card {
-    flex: 0 0 80vw; /* عرض کارت 90 درصد عرض صفحه */
-  }
 }
