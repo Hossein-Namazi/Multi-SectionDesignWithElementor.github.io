@@ -1,46 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت نمونه</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liliana Kids</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header class="navbar">
-        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-        <div class="logo">Liliana Kids</div>
-    </header>
+  <header class="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <div class="logo">Liliana Kids</div>
+  </header>
 
-    <aside class="sidebar" id="sidebar">
-        <button class="close-btn" onclick="toggleMenu()">×</button>
-        <ul>
-            <li>Models</li>
-            <li>Talents</li>
-            <li>Artists</li>
-            <li>Narrators</li>
-            <li>Influencers</li>
-        </ul>
-    </aside>
+  <aside class="sidebar" id="sidebar">
+    <button class="close-btn" onclick="toggleMenu()">×</button>
+    <ul>
+      <li>Models</li>
+      <li>Talents</li>
+      <li>Artists</li>
+      <li>Narrators</li>
+      <li>Influencers</li>
+    </ul>
+  </aside>
 
-    <main class="content">
-        <div class="card">
-            <div class="icon">👤</div>
-            <h3>Model</h3>
-            <p>Models of a wide range of ages are actively working in advertisements, fashion shows and events.</p>
-        </div>
-        <div class="card">
-            <div class="icon">🎭</div>
-            <h3>Talent</h3>
-            <p>There are a wide variety of uniquely talented talents active here.</p>
-        </div>
-        <div class="card">
-            <div class="icon">🎬</div>
-            <h3>Actor / Actress</h3>
-            <p>Our professional actors demonstrate their talents and skills in films, TV dramas and stage productions both in Japan and abroad.</p>
-        </div>
-    </main>
+  <main class="content">
+    <div class="carousel" id="carousel">
+      <div class="card">
+        <div class="icon">👤</div>
+        <h3>Model</h3>
+        <p>Models of a wide range of ages are actively working in advertisements, fashion shows and events.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎭</div>
+        <h3>Talent</h3>
+        <p>There are a wide variety of uniquely talented talents active here.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎬</div>
+        <h3>Actor / Actress</h3>
+        <p>Our professional actors demonstrate their talents and skills in films, TV dramas and stage productions both in Japan and abroad.</p>
+      </div>
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="prevCard()">&#8592;</button>
+      <button onclick="nextCard()">&#8594;</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
