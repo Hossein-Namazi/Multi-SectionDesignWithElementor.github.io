@@ -104,7 +104,7 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    .carousel{
-        max-width: 360px;
+    .card{
+        padding: 0rem;
     }
 }
