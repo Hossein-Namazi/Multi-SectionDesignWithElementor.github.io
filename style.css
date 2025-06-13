@@ -103,8 +103,8 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .carousel {
-    max-width: 356px; /* کل عرض صفحه */
-  }
+@media screen and (max-width: 768px) {
+    .carousel{
+        max-width: 360px;
+    }
 }
