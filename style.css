@@ -104,8 +104,41 @@ body {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    .card{
-        background: #00ff15;
-        padding: 0rem;
-    }
+  .content {
+    padding: 1rem;
+  }
+
+  .carousel {
+    max-width: 100%;
+    overflow: hidden;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    flex: 0 0 100%; /* فقط یک کارت کل عرض گوشی رو بگیره */
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem; /* فاصله بین دکمه‌ها */
+  }
+
+  .carousel-buttons button {
+    padding: 0.4rem 1rem;
+    font-size: 18px;
+  }
 }
+
+  
+
+  
